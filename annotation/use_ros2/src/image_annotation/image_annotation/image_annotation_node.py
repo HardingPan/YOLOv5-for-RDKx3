@@ -14,7 +14,7 @@ class ImageAnnotationNode(Node):
         self.cv_bridge = CvBridge()
         self.image_subscriber = self.create_subscription(
             Image,
-            'image_out/compressed',
+            'image_out',
             self.image_callback,
             10
         )
